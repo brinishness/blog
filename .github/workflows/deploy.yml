@@ -1,5 +1,11 @@
 image: node:14
-
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 pages:
  cache:
    paths:
@@ -13,3 +19,7 @@ pages:
    - public
  only:
  - master
+ name: CD
+
+
+
