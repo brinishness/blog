@@ -34,7 +34,7 @@ jobs:
       - name: Build with Vuepress
         run: |
           npm install &&
-          npm run build:docs &&
+          npm run docs:build &&
           ls -al
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v1
